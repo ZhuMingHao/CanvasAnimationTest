@@ -1,0 +1,16 @@
+﻿<Page
+    x:Class="CanvasAnimationTest.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:CanvasAnimationTest"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Canvas Name="RootCanvasLayout" Background="Ivory">
+            <Image Name="Pic" Width="100" Height="100" Source="Assets/hello.png" Canvas.Left="0" Canvas.Top = "0"/>
+        </Canvas>
+    </Grid>
+</Page>
