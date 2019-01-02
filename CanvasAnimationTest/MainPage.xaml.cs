@@ -43,6 +43,8 @@ namespace CanvasAnimationTest
             doubleAnimationX.Duration = duration;
             doubleAnimationY.To = point.Position.Y-Pic.ActualHeight/2;
             doubleAnimationY.Duration = duration;
+            doubleAnimationX.EasingFunction = new CircleEase() { EasingMode = EasingMode.EaseOut};
+            doubleAnimationY.EasingFunction = new CircleEase() { EasingMode = EasingMode.EaseOut };
             var conStoryboard = new Storyboard();
             conStoryboard.Children.Add(doubleAnimationX);
             conStoryboard.Children.Add(doubleAnimationY);
